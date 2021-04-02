@@ -53,13 +53,13 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 Hi {}, my name is {}! 
 I am an Anime themed group management bot.
-Build by weebs for weebs, I specialize in managing anime and similar themed groups. Join @ALPHA_PROJECTS.
+Build by weebs for weebs, I specialize in managing anime and similar themed groups. Join https://t.me/joinchat/QIBCivQvB7FkNDZh.
 You can find my list of available commands with /help.
 """
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-I'm Dr Stone & I help admins to manage their groups! Have a look at the following for an idea of some of \
+I'm Levi & I help admins to manage their groups! Have a look at the following for an idea of some of \
 the things I can help you with.
 
 *Main* commands available:
@@ -77,12 +77,10 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://images.alphacoders.com/103/thumb-1920-1031089.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/0db70e783a2fd5f46db48.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-Senku is hosted on one of Heroku's Servers and doesn't require any donations as of now but \
-You can donate to the original writer of the Base code, Paul
-There are two ways of supporting him; [PayPal](paypal.me/PaulSonOfLars), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
+No need to donate. Just share this bot with your friends that would mean alot to me"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -205,26 +203,26 @@ def start(update: Update, context: CallbackContext):
                                 context.bot.username)),
                          InlineKeyboardButton(
                              text=" 🔔 Updates ",
-                             url="https://t.me/SenkuUpdates")
+                             url="https://t.me/levibot_official")
                      ],
                      [
                         InlineKeyboardButton(
-                            text=" ✨ Help ",
-                            url="https://t.me/SenkuRobot?start=help"),
+                            text=" ✨ My Master ",
+                            url="https://t.me/no_friends_needed"),
                          InlineKeyboardButton(
-                            text=" ⚡️ Get Started ",
-                             url="https://t.me/SenkuUpdates/4")        
+                            text=" ⚡️ Support group",
+                             url="https://t.me/joinchat/QIBCivQvB7FkNDZh")        
                        
                      ],
                      [
                         InlineKeyboardButton(
                              text=" ❤️ Source Code ",
-                             url="https://github.com/FtSasaki/SenkuRobot")
+                             url="https://github.com/killerkr/SenkuRobot")
                     
                     ]]))
     else:
         update.effective_message.reply_text(
-            "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>"
+            "I'm awake already!Am not lazy like you\n<b>Haven't slept since:</b> <code>{}</code>"
             .format(uptime),
             parse_mode=ParseMode.HTML)
 
