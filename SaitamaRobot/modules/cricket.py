@@ -1,6 +1,4 @@
 """
-Created by @Jisan7509
-plugin for Cat_Userbot
 """
 
 from telethon.errors.rpcerrorlist import YouBlockedUserError
@@ -36,8 +34,8 @@ async def _(event):
         )
 
 
-@bot.on(admin_cmd(pattern=r"cric (.*)"))
-@bot.on(sudo_cmd(pattern=r"cric (.*)", allow_sudo=True))
+@bot.on(admin_cmd(pattern=r"cric (/*)"))
+@bot.on(sudo_cmd(pattern=r"cric (/*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
@@ -70,10 +68,10 @@ async def _(event):
 CMD_HELP.update(
     {
         "cricket": "__**PLUGIN NAME :** Cricket__\
-      \n\n📌** CMD ➥** `.score`\
+      \n\n📌** CMD ➥** `/score`\
       \n**USAGE   ➥  **To see score of ongoing matches.\
-      \n\n📌** CMD ➥** `.cric` <commnd>\
+      \n\n📌** CMD ➥** `/cric` <commnd>\
       \n**USAGE   ➥**  That will send details like scoreboard or commentary.\
-      \n\n**Example :-** `.cric /scorecard_30....`"
+      \n\n**Example :-** `/cric /scorecard_30....`"
     }
 )
