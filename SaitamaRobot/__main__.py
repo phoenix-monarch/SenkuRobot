@@ -211,13 +211,7 @@ def start(update: Update, context: CallbackContext):
                             url="https://t.me/no_friends_needed"),
                          InlineKeyboardButton(
                             text=" ⚡️ Support group",
-                             url="https://t.me/joinchat/QIBCivQvB7FkNDZh")        
-                       
-                     ],
-                     [
-                        InlineKeyboardButton(
-                             text=" ❤️ Source Code ",
-                             url="https://github.com/killerkr/SenkuRobot")
+                             url="https://t.me/joinchat/QIBCivQvB7FkNDZh")
                     
                     ]]))
     else:
