@@ -13,7 +13,7 @@ def lyrics(bot: Bot, update: Update, args):
     query = " ".join(args)
     song = ""
     if not query:
-        msg.reply_text("You haven't specified which song to look for!")
+        msg.reply_text("You haven't specified which song you are looking for!")
         return
     else:
         song = Song.find_song(query)
